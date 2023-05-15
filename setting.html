@@ -1,0 +1,508 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Ayarlar</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/pp.jpg" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">İrfan Abliz</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+                
+                
+                    <li class="nav-link">
+                        <a href="">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Anasayfa</span>
+                        </a>
+                    </li> 
+
+
+                    <li class="nav-link">
+                        <a href="edit_profile.html">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">Profil</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Bildirim</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-link">
+                        <a href="chat.html">
+                            <i class='bx bx-chat icon'></i>
+                            <span class="text nav-text">Mesajlar</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-link">
+                        <a href="setting.html">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav-text">ayarlar</span>
+                        </a>
+                    </li>
+
+
+                
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Çıkış yap</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+
+    <nav class="d-sm-none navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <span class="image">
+                        <img class="border-2" src="img/pp.jpg" alt="" width="60px" height="60px">
+                        İrfan Abliz
+                    </span>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class='bx bx-home-alt icon' ></i>
+                                <span class="text nav-text">Anasayfa</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="edit_profile.html">
+                                <i class='bx bx-user icon' ></i>
+                                <span class="text nav-text">Profil</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class='bx bx-bell icon'></i>
+                                <span class="text nav-text">Bildirim</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="chat.html">
+                              <i class='bx bx-chat icon'></i>
+                              <span class="text nav-text">Mesajlar</span>
+                          </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="setting.html">
+                                <i class='bx bx-cog icon'></i>
+                                <span class="text nav-text">ayarlar</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+                <div class="bottom-content2 list-unstyled mb-3 ms-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Çıkış yap</span>
+                        </a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <div class="d-inline sun-moon">
+                                <i class='bx bx-moon icon moon'></i>
+                            </div>
+                            <span class="mode-text text">Dark mode</span>
+        
+                            <div class="toggle-switch">
+                                <span class="switch"></span>
+                            </div>
+                        </a>
+                    </li>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <section class="home" id="irfan_home">
+        
+        <div class="container-sm "> 
+            <header>
+                <div class="text-center mb-5">
+                    <pre> </pre>
+                    <h1>Ayarlar</h1>
+                </div>
+            </header>
+            <div class="row justify-content-around ">
+                <div class="sa col-4 d-flex justify-content-between align-items-center">
+                    <div class="" >
+                        Son Görülme 
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    </div>
+                </div>
+            
+                
+                <div class="sa col-4 d-flex justify-content-between align-items-center">
+                    <div class="" >
+                        Profil Gizle 
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    </div>
+                </div>
+            </div>
+        <div class="row justify-content-around ">        
+            <div class="sa col-4 d-flex justify-content-between align-items-center">
+                <div class="" >
+                    Görüldü Bilgisi
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                </div>
+            </div>
+            <div class="sa col-4 d-flex justify-content-between align-items-center">
+                <div class="" >
+                    Biildirimlere İzin Ver
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+            
+        <div class="row justify-content-around ">
+                <div class="sa col-4 d-flex justify-content-between align-items-center">
+                    <div class="" >
+                        Yardım
+                    </div>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class='bx bx-chevron-right' style='color:#827c7c'  ></i>
+                    </button>
+        
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p></p>
+                    </div>
+                </div>
+        
+                
+            </div>
+            
+            <div class="sa col-4 d-flex justify-content-between align-items-center">
+                <div class="" >
+                    Konuşmaları Sil
+                </div>
+                <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    <i class='bx bx-chevron-right' style='color:#827c7c'  ></i>
+                </button>
+                
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="justify-content-center">
+                            <div class="as form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    1 Günden Eski
+                                </label>
+                            </div>
+                            <div class="as form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    1 Haftadan Eski
+                                </label>
+                            </div>
+                            <div class="as form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    1 Aydan Eski
+                                </label>
+                            </div>
+                            <div class="as form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Tüm Yazışmaları
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row justify-content-around ">        
+                <div class="sa col-4 d-flex justify-content-between align-items-center">
+                    <div class="btn-group  w-100">
+                        <button class="btn show-none" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                            Dil : <p class="d-inline" id="selected-option">Türkçe</p>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"  onclick="document.getElementById('selected-option').innerHTML = 'Türkçe'">Türkçe</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('selected-option').innerHTML = 'English'">English</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('selected-option').innerHTML = 'Deutsch'">Deutsch</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('selected-option').innerHTML = 'Français'">Français</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="document.getElementById('selected-option').innerHTML = 'Español'">Español</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="sa col-4 d-flex justify-content-between align-items-center">
+                    
+                </div>
+                
+                
+                
+            </div>
+        <div class="row justify-content-center">
+            <div class="sa col-4 d-flex justify-content-center align-items-center">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Çıkış
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Çıkış Yap</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        <div class="modal-body">
+                            Çıkış yapmak istediğinize emin misiniz!
+                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">İptal et</button>
+                        <button type="button" class="btn btn-danger">Çıkış Yap</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+        
+    <section class="home_2 d-sm-none">
+        
+        <div class="container-sm "> 
+            <header>
+                <div class="text-center">
+                    <pre> </pre>
+                    <h1>Ayarlar</h1>
+                </div>
+            </header>
+            <div class="row justify-content-center ">
+                <div class="sa col-7 d-flex justify-content-between align-items-center">
+                    <div class="" >
+                        Son Görülme 
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    </div>
+                </div>
+            
+            
+                <div class="sa col-7 d-flex justify-content-between align-items-center">
+                    <div class="" >
+                        Profil Gizle 
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    </div>
+                </div>
+            
+            
+                <div class="sa col-7 d-flex justify-content-between align-items-center">
+                    <div class="" >
+                        Görüldü Bilgisi
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+                    </div>
+                </div>
+            
+            
+                <div class="sa col-7 d-flex justify-content-between align-items-center">
+                    <div class="" >
+                        Konuşmaları Sil
+                    </div>
+                    <button class="btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <i class='bx bx-chevron-right' style='color:#827c7c'  ></i>
+                    </button>
+        
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <div class="justify-content-center">
+                            <div class="as form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    1 Günden Eski
+                                </label>
+                            </div>
+                            <div class="as form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    1 Haftadan Eski
+                                </label>
+                            </div>
+                            <div class="as form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    1 Aydan Eski
+                                </label>
+                            </div>
+                            <div class="as form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    Tüm Yazışmaları
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="sa col-7 d-flex justify-content-between align-items-center">
+                    <div class="" >
+                        Yardım
+                    </div>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class='bx bx-chevron-right' style='color:#827c7c'  ></i>
+                    </button>
+        
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p></p>
+                    </div>
+                    </div>
+        
+                    
+                </div>
+        
+            
+                <div class="sa col-7 d-flex justify-content-center align-items-center">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Çıkış
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Çıkış Yap</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                            <div class="modal-body">
+                                Çıkış yapmak istediğinize emin misiniz!
+                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">İptal et</button>
+                            <button type="button" class="btn btn-danger">Çıkış Yap</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
