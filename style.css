@@ -522,14 +522,13 @@ body.dark .sa{
     .rounded-circle{
         display: flex;
         justify-content: center;
-       margin: auto;
-       margin-top: 10%;
+        margin: auto;
+        margin-top: 10%;
     }
     .ekle_sil{
-      
-      display: flex;
-      justify-content: center;
-      margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
     }
     .sil_pr{
         margin-right: 3%;
@@ -539,32 +538,35 @@ body.dark .sa{
     }
     .h_text{
         display: flex;
-     justify-content: center;
+        justify-content: center;
     }
     .button2_pr{
         display: flex;
         justify-content: center;
         margin-bottom: 5%;
     }
-   .text_profile{
-   margin-top: 10%;
-   display: flex;
-   justify-content: center;
-   }
-   .button1_pr{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10%;
-   }
-   #button1{
-    width: 200px; 
-   }
-   body.dark #col2{
-    /* background-color: #333333a6; */
-   }
-   #container_profil{
-
-   }
+    .text_profile{
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    .button1_pr{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10%;
+    }
+    #button1{
+        width: 200px; 
+    }
+    body.dark #col2{
+        background-color: #f3f3f59a 
+    }
+    #container_profil{
+    background-color:#5c22e2e8; 
+    }
+    .sidebar2{
+        display: none;
+    }
 
 }
     
