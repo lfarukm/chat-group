@@ -61,7 +61,7 @@ body.dark{
 }
 
 /* ===== Reusable code - Here ===== */
-.sidebar li{
+.sidebar li,#nav_item{
     height: 50px;
     list-style: none;
     display: flex;
@@ -73,6 +73,11 @@ body.dark{
 .sidebar .icon{
     min-width: 60px;
     border-radius: 6px;
+}
+#nav_img,#nav_icon{
+   border-radius: 50%;
+   font-size: 20px;
+   min-width: 30px;
 }
 
 .sidebar .icon{
@@ -167,11 +172,22 @@ body.dark .sidebar header .toggle{
     margin-top: 40px;
 }
 
-.sidebar li.search-box{
+.sidebar li.search-box,#nav_searchbox{
     border-radius: 6px;
     background-color: var(--primary-color-light);
     cursor: pointer;
     transition: var(--tran-05);
+}
+
+#nav_ara{
+    border: none;
+    background-color: var(--primary-color-light);
+    outline: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 500;
+    
+    
 }
 
 .sidebar li.search-box input{
@@ -197,6 +213,9 @@ body.dark .sidebar header .toggle{
     border-radius: 6px;
     text-decoration: none;
     transition: var(--tran-03);
+}
+#nav_toggle{
+    background-color: #333333a4;
 }
 
 .sidebar li a:hover{
@@ -231,6 +250,15 @@ body.dark .sidebar li a:hover .text{
 .menu-bar .mode .sun-moon{
     height: 50px;
     width: 60px;
+}
+
+#moon_i{
+    position: absolute;
+    opacity: 0;
+    
+}
+body.dark #moon_i{
+    opacity: 1;
 }
 
 .mode .sun-moon i{
@@ -313,17 +341,14 @@ body.dark .home .text{
     width: 200px;
 }
 #container_profil{
-    background-color:#5c22e2e8;
-    
-    
+    background-color:#5c22e2e8; 
 }
 body.dark #container_profil{
     background-color: #000f0d;
    
 }
 body.dark #col2{
-    background-color: #f3f3f59a;
-    
+    background-color: #f3f3f59a;   
 }
 body.dark #ekle:hover{
 color: #d9ebe8dc;
@@ -373,8 +398,6 @@ margin-bottom:2ch;
 #col2{
     background-color: #ffffff;
     border-radius: 8px;
-    
-    
 }
 .label_pr{
     margin-bottom: 8px;
@@ -383,10 +406,14 @@ margin-bottom:2ch;
     display: block;
 }
 .label_tel{ 
-    margin:  95px 0 10px 8px;   
+    margin:  93px 0 10px 8px;   
+    
 }
 .label_ulke{
-    margin:  20px 0px 8px 8px ;
+    margin:  14px 0px 8px 8px ;
+}
+.label.label_pr,.label_tel,.label_ulke{
+    display: block;
 }
 .input_pr,.input_ulke,#input_sehir{
     width: 90%;
@@ -397,10 +424,9 @@ margin-bottom:2ch;
     border-radius: 5px;
 }
 #phone{
-    width: 190px; 
-    padding-top:10px;
-    padding-bottom: 8px;
-    margin-bottom: 10px;
+    width: 90%; 
+    padding: 10px;
+    margin-bottom: 5px;
     border: 0;    
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     border-radius: 5px;
@@ -408,7 +434,7 @@ margin-bottom:2ch;
 #button1{
     width: 90%;
     margin-top: 2em;
-    margin-bottom: 5rem;
+    margin-bottom: 150px;
     padding: 10px;
     background-color: #12051df8 ;
     color: #FFF;
@@ -434,13 +460,12 @@ margin-bottom:2ch;
 }
 #button2{
     
-    margin-top: 2ch;
     background-color: #08051db0;
     width: 180px;
     font-weight: 400;
     color: #fff;
     cursor: pointer; 
-    margin: 20px;
+    margin: 30px;
     height: 45px;
     border: none;
     background-size: 300% 100%;
@@ -458,7 +483,7 @@ margin-bottom:2ch;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    background-image: linear-gradient(to right, #7d25e1, #a763df, #54e69f, #00cc99de);
+    background-image: linear-gradient(to left,#00cc99de,#54e69f,  #a763df,#7d25e1 );
     box-shadow: 0 8px 12px 0 rgba(133, 223, 171, 0.452);
     
 }
@@ -473,6 +498,7 @@ margin-bottom:2ch;
     width:80%;
     resize: vertical;
     padding:15px;
+    
     border-radius:15px;
     border:0;
     box-shadow:4px 4px 10px rgba(110, 108, 108, 0.349);
@@ -506,7 +532,7 @@ body.dark .sa{
 }
 
 
-@media screen and (max-width:666px) {
+@media screen and (max-width:665px) {
     .sidebar{
         display: none;
     }
@@ -515,9 +541,6 @@ body.dark .sa{
     }
     #afife_home{
         display: none;
-    }
-    .label.label_pr,.label_tel,.label_ulke{
-        display: block;
     }
     .rounded-circle{
         display: flex;
@@ -545,6 +568,20 @@ body.dark .sa{
         justify-content: center;
         margin-bottom: 5%;
     }
+   .text_profile{
+   margin-top: 10%;
+   display: flex;
+   justify-content: center;
+   }
+   .button1_pr{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+   }
+   #button1{
+    width: 200px; 
+    margin-bottom: 50px;
+   }
     .text_profile{
         margin-top: 10%;
         display: flex;
@@ -568,6 +605,12 @@ body.dark .sa{
         display: none;
     }
 
+}
+@media screen and(max-width:999){
+    .rounded-circle{
+        display: flex;
+        margin: auto;
+    }
 }
     
 
@@ -1094,8 +1137,3 @@ body.dark .irfan-nvbr{
     
 
 }
-
-
-
-
-

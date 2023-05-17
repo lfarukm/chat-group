@@ -109,8 +109,8 @@
 
                 <li class="mode">
                     <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
+                        <i class='bx bx-moon icon moon' ></i>
+                        <i class='bx bx-sun icon sun' ></i>
                     </div>
                     <span class="mode-text text">Dark mode</span>
 
@@ -130,10 +130,10 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" id="nav_body">
+                <div class="offcanvas-header" >
                     <span class="image">
-                        <img class="border-2" src="img/pp.jpg" alt="" width="60px" height="60px">
+                        <img class="border-2" id="nav_img" src="img/pp.jpg" alt="" width="60px" height="60px">
                         İrfan Abliz
                     </span>
                     
@@ -141,62 +141,90 @@
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
-                                <i class='bx bx-home-alt icon' ></i>
+                        
+                        <li class="nav-item" id="nav_searchbox">
+                            <a class="nav-link active" aria-current="page" href="#" id="nav_a">
+                                <i class='bx bx-search icon' id="nav_icon" ></i>
+                                <input type="text" placeholder="Ara..." id="nav_ara">
+                            </a>
+                        </li>
+                        <li class="nav-item" id="nav_item">
+                            <a class="nav-link active" aria-current="page" href="#" id="nav_a">
+                                <i class='bx bx-home-alt icon' id="nav_icon" ></i>
                                 <span class="text nav-text">Anasayfa</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="edit_profile.html">
-                                <i class='bx bx-user icon' ></i>
+                        <li class="nav-item" id="nav_item">
+                            <a class="nav-link active" aria-current="page" href="edit_profile.html" id="nav_a">
+                                <i class='bx bx-user icon' id="nav_icon" ></i>
                                 <span class="text nav-text">Profil</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">
-                                <i class='bx bx-bell icon'></i>
+                        <li class="nav-item" id="nav_item">
+                            <a class="nav-link active" aria-current="page" href="#" id="nav_a">
+                                <i class='bx bx-bell icon' id="nav_icon"></i>
                                 <span class="text nav-text">Bildirim</span>
                             </a>
                         </li>
 
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="chat.html">
-                            <i class='bx bx-chat icon'></i>
+                        <li class="nav-item" id="nav_item">
+                          <a class="nav-link active" aria-current="page" href="chat.html" id="nav_a">
+                            <i class='bx bx-chat icon' id="nav_icon"></i>
                             <span class="text nav-text">Mesajlar</span>
                         </a>
                       </li>
     
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="setting.html">
-                                <i class='bx bx-cog icon'></i>
-                                <span class="text nav-text">ayarlar</span>
+                        <li class="nav-item" id="nav_item">
+                            <a class="nav-link active" aria-current="page" href="setting.html" id="nav_a">
+                                <i class='bx bx-cog icon' id="nav_icon"></i>
+                                <span class="text nav-text">Ayarlar</span>
                             </a>
                         </li>
                     </ul>
+                    <div class="bottom-content2 list-unstyled mb-3 ms-3" id="nav_toggle" >
+                       
+        
+                        <li class="nav-item" id="nav_item">
+                            <a class="nav-link active" aria-current="page" href="#" id="nav_a">
+                                <div class="d-inline sun-moon" id="nav_moon">
+                                    <i class='bx bx-moon icon moon' id="moon_i"></i>
+                                    <i class='bx bx-sun icon sun' id="sun_i" ></i>
+                                </div>
+                                <span class="mode-text text">Dark mode</span>
+            
+                                <div class="toggle-switch" >
+                                    <span class="switch"></span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                    </div>
+
+                    
 
                     
                 </div>
-                <div class="bottom-content2 list-unstyled mb-3 ms-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
-                            <i class='bx bx-log-out icon' ></i>
+                <div class="bottom-content2 list-unstyled mb-3 ms-3" >
+                    <li class="nav-item " id="nav_item">
+                        <a class="nav-link active" aria-current="page" href="#" id="nav_a">
+                            <i class='bx bx-log-out icon' id="nav_icon"s ></i>
                         <span class="text nav-text">Çıkış yap</span>
                         </a>
                     </li>
     
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">
+                    <!-- <li class="nav-item" id="nav_item">
+                        <a class="nav-link active" aria-current="page" href="#" id="nav_a">
                             <div class="d-inline sun-moon">
-                                <i class='bx bx-moon icon moon'></i>
+                                <i class='bx bx-moon icon moon' id="nav_icon"></i>
+                                <i class='bx bx-sun icon sun' id="nav_icon" ></i>
                             </div>
                             <span class="mode-text text">Dark mode</span>
         
-                            <div class="toggle-switch">
+                            <div class="toggle-switch" >
                                 <span class="switch"></span>
                             </div>
                         </a>
-                    </li>
+                    </li> -->
                     
                 </div>
             </div>
