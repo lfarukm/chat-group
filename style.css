@@ -778,6 +778,8 @@ body {
     border-top: 1px solid #ddd;
     background: #eee;
     padding: 10px;
+    position: sticky;
+    bottom: 0;
 }
 .chat .content .message-form ul {
     display: flex;
@@ -843,4 +845,9 @@ body.dark .chat .content .message-form{
 }
 body.dark .chat .content .message-form{
     border-top: 1px solid #534b4b;
+}
+
+body.dark .irfan-nvbr{
+    background-color: #000f0d;
+    color: white;
 }
