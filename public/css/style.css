@@ -260,6 +260,9 @@ body.dark .sidebar li a:hover .text{
 body.dark #moon_i{
     opacity: 1;
 }
+body.dark #sun_i{
+    opacity: 0;
+}
 
 .mode .sun-moon i{
     position: absolute;
@@ -275,6 +278,17 @@ body.dark .mode .sun-moon i.moon{
 }
 
 .menu-bar .bottom-content .toggle-switch{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#nav_toggle{
     position: absolute;
     right: 0;
     height: 100%;
