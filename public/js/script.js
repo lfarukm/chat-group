@@ -4,6 +4,8 @@ const body = document.querySelector('body'),
         searchBtn = body.querySelector(".search-box"),
         modeSwitch = body.querySelector(".toggle-switch"),
         modeText = body.querySelector(".mode-text");
+        resModeSwitch=body.querySelector("#nav_switch")
+        resTextMode=body.querySelector("#text_mode")
 
 
 toggle.addEventListener("click" , () =>{
@@ -23,7 +25,18 @@ modeSwitch.addEventListener("click" , () =>{
         modeText.innerText = "Dark mode";
         
     }
+})
+// Resposive Dark Mode
+resModeSwitch.addEventListener("click", () =>{
+    body.classList.toggle("dark");
+    if(body.classList.contains("dark")){
+        resTextMode.innerText="Gündüz Mod";
+    }
+    else{
+        resTextMode.innerText="Gece Mod";
+    }
 });
+;
 
 // mesaj silme :
 
