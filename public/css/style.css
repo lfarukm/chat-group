@@ -351,6 +351,9 @@ body.dark .switch::before{
 body.dark .home .text{
     color: var(--text-color);
 }
+
+/* Profili Düzenle */
+
 #nav_item{
     height: 50px;
     list-style: none;
@@ -812,7 +815,7 @@ body {
     margin-bottom: 3px;
 }
 
-.chat .sidebar2 .contacts ul li a .contact .message {
+.chat .sidebar2 .contacts ul li a .contact .message_boxy {
     font-size: 13px;
     color: #999;
 }
@@ -887,59 +890,9 @@ body {
     color: #222;
 }
 
-.chat .content .message-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    overflow: auto;
-}
-
-.chat .content .message-content::before {
-    content: '';
-    margin-bottom: auto;
-}
-
-.chat .content .message-content .message {
-    align-self: flex-start;
-    margin-bottom: 20px;
-}
-
-.chat .content .message-content .message .bubble {
-    padding: 6px 12px;
-    background: #f7f7f7;
-    border-radius: 20px;
-    font-size: 15px;
-    margin-bottom: 5px;
-}
-
-.chat .content .message-content .message .time {
-    font-size: 12px;
-    color: #999;
-}
-
-.chat .content .message-content .message.me {
-    align-self: flex-end;
-}
-
-.chat .content .message-content .message.me .bubble {
-    background: #2196f3;
-    color: #fff;
-}
-
-.chat .content .message-content .message.me .time {
-    text-align: right;
-}
-
-.chat .content .message-form {
-    border-top: 1px solid #ddd;
-    background: #eee;
-    padding: 10px;
-    position: sticky;
-    bottom: 0;
-}
 .chat .content .message-form ul {
     display: flex;
+    width: 100%;
 }
 .chat .content .message-form ul li {
     margin: 0 5px;
@@ -1250,4 +1203,77 @@ body.dark .irfan-nvbr{
     }
     
 
+}
+
+/* Chat Mesajlaşma Kısmı */
+
+.container_chat {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    min-height: 100vh;
+    background: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+    
+}
+section.chat_section {
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.message_area{
+    height: 550px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 15px;
+    
+}
+
+
+#textarea {
+    width: 90%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #FBFBFB;
+}
+
+.message {
+    padding: 12px; 
+    border-radius: 5px; 
+    margin-bottom: 15px;
+    max-width: max-content;
+    position: relative;
+}
+.incoming {
+    background: #8F8BE8;
+    color: #fff;  
+}
+.outgoing {
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+}
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+}
+#img_chat{
+    border-radius: 50%;
+}
+#sendButton{
+    padding: 10px;
+    border: #339af0 ;
+    font-size: 16px;
+    outline: none;
+    
+}
+p{
+    margin-bottom: 0px;
 }

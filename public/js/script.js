@@ -50,25 +50,25 @@ for (var i = 0; i < closeIcons.length; i++) {
 }
 
 
-function mesajGonder(){
-    var metin = document.getElementById("mesaj").value;
-    var yeniElement = document.createElement("p");
-    var icerik = document.createTextNode(metin);
-    yeniElement.appendChild(icerik);
-    var icerik = document.getElementById("icerik");
-    icerik.appendChild(yeniElement);
+// function mesajGonder(){
+//     var metin = document.getElementById("mesaj").value;
+//     var yeniElement = document.createElement("p");
+//     var icerik = document.createTextNode(metin);
+//     yeniElement.appendChild(icerik);
+//     var icerik = document.getElementById("icerik");
+//     icerik.appendChild(yeniElement);
     
-    document.getElementById("mesaj").value = "";
-    document.getElementById("icerik").scrollTop += 9999; /* yazdıkça scrollda gelsin */
+//     document.getElementById("mesaj").value = "";
+//     document.getElementById("icerik").scrollTop += 9999; /* yazdıkça scrollda gelsin */
     
-}
-    document.getElementById("mesaj").addEventListener("keyup", function(event) {
-        event.preventDefault();
-        if (event.keyCode == 13) {
-            document.getElementById("button").click();
-            document.getElementById("icerik").scrollTop += 9999; /* yazdıkça scroolda gelsin */
-        }
-});
+// }
+//     document.getElementById("mesaj").addEventListener("keyup", function(event) {
+//         event.preventDefault();
+//         if (event.keyCode == 13) {
+//             document.getElementById("button").click();
+//             document.getElementById("icerik").scrollTop += 9999; /* yazdıkça scroolda gelsin */
+//         }
+// });
 
 
 function getIp(callback) {
